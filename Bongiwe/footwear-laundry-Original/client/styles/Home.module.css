@@ -1,0 +1,300 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+.bookBtn {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 570;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.bookBtn:hover {
+  opacity: 0.85;
+}
+
+.main {
+  padding: 0;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  min-height: calc(100vh - 80px);
+  padding: 2.5rem 6rem;
+  gap: 4rem;
+}
+
+.hero {
+  max-width: 520px;
+  text-align: left;
+  padding-top: 6rem;
+}
+
+.hero h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  margin-top: 0.9rem;
+  max-width: 440px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: 0.75rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 570;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.primaryBtn:hover,
+.secondaryBtn:hover {
+  opacity: 0.85;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  object-fit: contain;
+  animation: flip 5s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+.servicesSection {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sectionIntro {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.serviceCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  padding: 1.5rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.serviceCard h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.serviceCard p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.learnMoreBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.shopSection {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.productCard {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.productCard h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.productCard p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.productCard button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ctaSection {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.quickInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quickInfo div {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #fff;
+  color: #000;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footer .quickLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+
+.footer h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .serviceCards,
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .quickInfo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
